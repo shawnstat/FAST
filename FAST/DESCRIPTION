@@ -3,7 +3,7 @@ Type: Package
 Title: Flexible Analysis of Spatial Transcriptomics (FAST) Data: A Deconvolution Approach
 Version: 1.0
 Date: 2022-07-02
-Author: Xiaoxiao Sun
+Author: Meng Zhang; Joel Parker; Xiaoxiao Sun
 Maintainer: Xiaoxiao Sun <xiaoxiao.stat@gmail.com>
 Description: An R package to perform deconvolution analysis of spatial transcriptomics data.
 License: MIT
