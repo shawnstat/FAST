@@ -12,6 +12,8 @@ config <- dmain_config
 config$r <- 2
 config$lambda_1 <- 0.2
 config$lambda_2 <- 0.2
-config$n_iter <- 2000
-system.time(res<-dmain(log(X+1),adj_final,config))
+config$n_iter <- 1000
+X <- log(X+1)
+X <- X/max(X)
+system.time(res<-dmain(X,adj_final,config))
 cor(res$H[,1], true_props[,1])
