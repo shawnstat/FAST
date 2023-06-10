@@ -7,7 +7,7 @@ load("Adjacent.RData")
 X <- output[[1]]
 true_props <-  output[[2]]
 
-set.seed(2023)
+
 config <- dmain_config
 config$r <- 2
 config$lambda_1 <- 0.2
