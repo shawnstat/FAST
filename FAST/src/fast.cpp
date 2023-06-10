@@ -54,10 +54,10 @@ List fast(NumericMatrix Xr, NumericMatrix Gr, int r=5, double lambda_1r=1.0, dou
 
     // set W/H to be random values in the range
     // of X, the NMF package in R recommends this
-    W*=(maxX-minX);
-    W+=minX+1e-4;
-    H*=(maxX-minX);
-    H+=minX+1e-4;
+ //   W*=(maxX-minX);
+ //   W+=minX+1e-4;
+ //   H*=(maxX-minX);
+ //   H+=minX+1e-4;
 
     // the D matrix is the diagonal matrix of row (or column since G is symmetric)
     // sums of G.
