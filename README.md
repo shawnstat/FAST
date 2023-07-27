@@ -1,7 +1,9 @@
 # Flexible Analysis of Spatial Transcriptomics (FAST): A Deconvolution Approach
+
 ## Authors: Meng Zhang; Joel Parker; Xiaoxiao Sun
 
-### Example codes
+## Example codes
+
 load("Simulation.RData")
 load("Adjacent.RData")
 X <- output[[1]]
