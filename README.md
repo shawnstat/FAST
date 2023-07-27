@@ -6,13 +6,12 @@
 
 ### Install
     library("devtools")
-    install_github("shawnstat/FAST")
-    # Download the following two files from the project page on GitHub
-    load("Simulation.RData")
-    load("Adjacent.RData")
+    install_github("shawnstat/FAST/FAST")
+    library(FAST)
+    data(simulate)
 ### Run FAST
-    X <- output[[1]]
-    true_props <-  output[[2]]
+    X <- simulated_data$X
+    true_props <-  simulated_data$true_proportions
     config <- dmain_config
     config$r <- 2
     config$lambda_1 <- 0.05
@@ -21,5 +20,5 @@
     X <- log(X+1)
     X <- X/max(X)
     set.seed(1)
-    system.time(res<-dmain(X,adj_final,config))
+    system.time(res<-dmain(X,simulated_data$adjacent,config))
     cor(res$H[,1], true_props[,1])
