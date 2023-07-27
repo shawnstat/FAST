@@ -7,6 +7,7 @@
 ### Install
     library("devtools")
     install_github("shawnstat/FAST")
+    # Download the following two files from the project page on GitHub
     load("Simulation.RData")
     load("Adjacent.RData")
 ### Run FAST
